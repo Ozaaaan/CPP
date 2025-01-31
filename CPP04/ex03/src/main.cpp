@@ -6,9 +6,14 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 16:16:36 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/27 16:17:19 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 15:06:17 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Character.hpp"
+#include "MateriaSource.hpp"
+#include "Cure.hpp"
+#include "Ice.hpp"
 
 int main()
 {

@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 14:39:21 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/30 16:02:35 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 13:58:16 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,8 @@ Character& Character::operator=(const Character &copy)
                 {
                         if (this->inventory[i])
                                 delete this->inventory[i];
-                        if (other.inventory[i])
-                                this->inventory[i] = other.inventory[i]->clone();
+                        if (copy.inventory[i])
+                                this->inventory[i] = copy.inventory[i]->clone();
                         else
                                 this->inventory[i] = NULL;
                 }

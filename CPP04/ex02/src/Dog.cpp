@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:51:37 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/27 15:15:44 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 16:12:12 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,10 @@ Dog::Dog(const Dog& obj)
 Dog& Dog::operator=(const Dog &copy)
 {
         if (this != &copy)
+        {
                 this->type = copy.getType();
+                this->brain = new Brain(*copy.brain);
+        }
         return (*this);
 }
 

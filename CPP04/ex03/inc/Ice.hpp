@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 13:26:44 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/28 14:03:59 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 13:57:45 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Ice : public AMateria
 
                 Ice &operator=(const Ice &copy);
 
-                AMateria* clone() const = 0;
+                AMateria* clone() const;
                 void use(ICharacter &target);
 };
 

@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 14:27:02 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/30 15:55:45 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 13:55:56 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Character : public ICharacter
                 Character();
                 Character(std::string name);
                 Character(const Character &other);
-                ~Character()
+                ~Character();
 
                 Character& operator=(const Character &copy);
 

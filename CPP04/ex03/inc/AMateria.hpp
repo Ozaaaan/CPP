@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 16:17:46 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/28 13:56:45 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 13:58:34 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <iostream>
 #include <string>
 #include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria
 {

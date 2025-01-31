@@ -6,7 +6,7 @@
 /*   By: ozdemir <ozdemir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/24 13:55:58 by ozdemir           #+#    #+#             */
-/*   Updated: 2025/01/27 15:01:40 by ozdemir          ###   ########.fr       */
+/*   Updated: 2025/01/31 16:12:13 by ozdemir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,10 @@ Cat::Cat(const Cat& obj)
 Cat& Cat::operator=(const Cat &copy)
 {
         if (this != &copy)
+        {
                 this->type = copy.getType();
+                this->brain = new Brain(*copy.brain);
+        }
         return (*this);
 }
 
